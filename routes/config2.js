@@ -3,6 +3,7 @@
  */
 var express = require('express');
 var activity_wrapper = require('../module/activity_wrapper');
+var notice_wrapper = require('../module/notice_wrapper');
 var schedule_wrapper = require('../module/schedule_wrapper');
 
 var router = express.Router();
@@ -14,7 +15,7 @@ router.get('/', function(req, res) {
     if(!req.session.user){
         return res.redirect('/login');
     }
-    activity_wrapper.get_all(function(reply){
+    notice_wrapper.get_all(function(reply){
         var all_channel = reply;
         var array = [];
         //var data = "[{ id: 5, text: '5%' }, { id: 10, text: '10%'}, { id: 20, text: '20%'}, { id: 30, text: '30%'}]";
@@ -89,8 +90,8 @@ router.post('/', function(req, res) {
         }
     }
     if("show" == type){
-        activity_wrapper.get_just(channel,version,function(reply){
-            result.activity = reply;
+        notice_wrapper.get_just(channel,version,function(reply){
+            result.notice = reply;
             if(!reply){
                 result.code = 202;
             }
@@ -98,16 +99,16 @@ router.post('/', function(req, res) {
         });
     }
     else if("add" == type){
-        activity_wrapper.add(channel,version,function(reply,activity){
+        notice_wrapper.add(channel,version,function(reply,notice){
             if(1 != reply){
                 result.code = 202;
             }
-            result.activity = activity;
+            result.notice = notice;
             return  res.end(JSON.stringify(result) + '\n', 'utf8');
         });
     }
     else if("del" == type){
-        activity_wrapper.del(channel,version,function(reply){
+        notice_wrapper.del(channel,version,function(reply){
             if(1 != reply){
                 result.code = 202;
             }
@@ -123,7 +124,7 @@ router.post('/', function(req, res) {
                 result.code = 201;
                 return  res.end(JSON.stringify(result) + '\n', 'utf8');
             }
-            activity_wrapper.save(channel + ":" + version,config,function(reply){
+            notice_wrapper.save(channel + ":" + version,config,function(reply){
                 if(0 != reply){
                     result.code = 202;
                 }

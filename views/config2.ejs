@@ -20,7 +20,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="/">tools</a>
+            <a class="brand" href="/">notice tools</a>
 
             <div class="nav-collapse">
                 <ul class="nav">
@@ -130,9 +130,9 @@
                     {
                         case 200:
                             log_message = log_message + "add config ok";
-                            var text_area_config_show_json = jsonToStr(JSON.parse(result.activity), null, '\t');
+                            var text_area_config_show_json = jsonToStr(JSON.parse(result.notice), null, '\t');
                             text_area_config_json.setValue(text_area_config_show_json);
-                            text_area_config.setValue(result.activity);
+                            text_area_config.setValue(result.notice);
                             break;
                         case 202:
                             log_message = log_message + "add config error,you must make sure the version' default template exits!";
@@ -261,12 +261,12 @@
                     {
                         case 200:
                             if(0){
-                                text_area_config.setValue(result.activity);
+                                text_area_config.setValue(result.notice);
                             }
                             else{
-                                var text_area_config_show_json = jsonToStr(JSON.parse(result.activity), null, '\t');
+                                var text_area_config_show_json = jsonToStr(JSON.parse(result.notice), null, '\t');
                                 text_area_config_json.setValue(text_area_config_show_json);
-                                text_area_config.setValue(result.activity);
+                                text_area_config.setValue(result.notice);
                             }
                             log_message = log_message + "get config ok";
                             break;
