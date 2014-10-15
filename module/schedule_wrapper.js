@@ -2,7 +2,7 @@
  * Created by King Lee on 14-7-31.
  */
 var redis_schedule_wrapper = require('../nosql/redis_schedule_wrapper');
-var activity_wrapper = require('../module/activity_wrapper');
+var notice_wrapper = require('../module/notice_wrapper');
 
 var schedule_list = [];
 var schedule_log_list = [];
@@ -52,9 +52,9 @@ schedule_wrapper.init = function() {
             var day = parseInt(plan_date[2]);
             var year = parseInt(plan_date[3]);
             if(month_now == month && day_now == day && year_now == year){
-                activity_wrapper.get_just(channel_src,version,function(activity){
+                notice_wrapper.get_just(channel_src,version,function(activity){
                     if(activity){
-                        activity_wrapper.save(channel_des + ":" + version,activity,function(reply){
+                        notice_wrapper.save(channel_des + ":" + version,activity,function(reply){
 
                         });
                     }
