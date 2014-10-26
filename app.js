@@ -18,7 +18,8 @@ var logout = require('./routes/logout');
 var config = require('./routes/config');
 var config2 = require('./routes/config2');
 var save = require('./routes/save');
-var show = require('./routes/show');
+var show1 = require('./routes/show1');
+var show2 = require('./routes/show2');
 var app = express();
 
 // view engine setup
@@ -47,7 +48,8 @@ app.use('/logout', logout);
 app.use('/config', config);
 app.use('/config2', config2);
 app.use('/save', save);
-app.use('/show', show);
+app.use('/show1', show1);
+app.use('/show2', show2);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
