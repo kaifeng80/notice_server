@@ -48,8 +48,8 @@ app.use('/logout', logout);
 app.use('/config', config);
 app.use('/config2', config2);
 app.use('/save', save);
-app.use('/show_200_1', show_200_1);
-app.use('/show_200_2', show_200_2);
+//app.use('/show_200_1', show_200_1);
+//app.use('/show_200_2', show_200_2);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
