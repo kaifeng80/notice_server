@@ -19,8 +19,10 @@ var config = require('./routes/config');
 var config2 = require('./routes/config2');
 var save = require('./routes/save');
 var announcement_200 = require('./routes/announcement_200');
+var announcement_200_000066 = require('./routes/announcement_200_000066');
 var rewardlist_seoul_200 = require('./routes/rewardlist_seoul_200');
 var announcement_210 = require('./routes/announcement_210');
+var announcement_210_000066 = require('./routes/announcement_210_000066');
 var rewardlist_seoul_210 = require('./routes/rewardlist_seoul_210');
 var app = express();
 
@@ -51,8 +53,10 @@ app.use('/config', config);
 app.use('/config2', config2);
 app.use('/save', save);
 app.use('/announcement_200', announcement_200);
+app.use('/announcement_200_000066', announcement_200_000066);
 app.use('/rewardlist_seoul_200', rewardlist_seoul_200);
 app.use('/announcement_210', announcement_210);
+app.use('/announcement_210_000066', announcement_210_000066);
 app.use('/rewardlist_seoul_210', rewardlist_seoul_210);
 
 /// catch 404 and forward to error handler
