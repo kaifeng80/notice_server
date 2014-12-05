@@ -20,6 +20,8 @@ var config2 = require('./routes/config2');
 var save = require('./routes/save');
 var show_200_1 = require('./routes/show_200_1');
 var show_200_2 = require('./routes/show_200_2');
+var show_210_1 = require('./routes/show_210_1');
+var show_210_2 = require('./routes/show_210_2');
 var app = express();
 
 // view engine setup
@@ -50,6 +52,8 @@ app.use('/config2', config2);
 app.use('/save', save);
 app.use('/show_200_1', show_200_1);
 app.use('/show_200_2', show_200_2);
+app.use('/show_210_1', show_200_1);
+app.use('/show_210_2', show_200_2);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
