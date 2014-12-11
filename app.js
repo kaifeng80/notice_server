@@ -20,10 +20,32 @@ var config2 = require('./routes/config2');
 var save = require('./routes/save');
 var announcement_200 = require('./routes/announcement_200');
 var announcement_200_000066 = require('./routes/announcement_200_000066');
-var rewardlist_seoul_200 = require('./routes/rewardlist_seoul_200');
 var announcement_210 = require('./routes/announcement_210');
 var announcement_210_000066 = require('./routes/announcement_210_000066');
+
+var rewardlist_seoul_200 = require('./routes/rewardlist_seoul_200');
+var rewardlist_seoul_200_000005 = require('./routes/rewardlist_seoul_200_000005');
+var rewardlist_seoul_200_000020 = require('./routes/rewardlist_seoul_200_000020');
+var rewardlist_seoul_200_000023 = require('./routes/rewardlist_seoul_200_000023');
+var rewardlist_seoul_200_000054 = require('./routes/rewardlist_seoul_200_000054');
+var rewardlist_seoul_200_000108 = require('./routes/rewardlist_seoul_200_000108');
+var rewardlist_seoul_200_000440 = require('./routes/rewardlist_seoul_200_000440');
+var rewardlist_seoul_200_000491 = require('./routes/rewardlist_seoul_200_000491');
+var rewardlist_seoul_200_000582 = require('./routes/rewardlist_seoul_200_000582');
+var rewardlist_seoul_200_000800 = require('./routes/rewardlist_seoul_200_000800');
+
 var rewardlist_seoul_210 = require('./routes/rewardlist_seoul_210');
+var rewardlist_seoul_210_000005 = require('./routes/rewardlist_seoul_210_000005');
+var rewardlist_seoul_210_000020 = require('./routes/rewardlist_seoul_210_000020');
+var rewardlist_seoul_210_000023 = require('./routes/rewardlist_seoul_210_000023');
+var rewardlist_seoul_210_000054 = require('./routes/rewardlist_seoul_210_000054');
+var rewardlist_seoul_210_000108 = require('./routes/rewardlist_seoul_210_000108');
+var rewardlist_seoul_210_000440 = require('./routes/rewardlist_seoul_210_000440');
+var rewardlist_seoul_210_000491 = require('./routes/rewardlist_seoul_210_000491');
+var rewardlist_seoul_210_000582 = require('./routes/rewardlist_seoul_210_000582');
+var rewardlist_seoul_210_000800 = require('./routes/rewardlist_seoul_210_000800');
+
+
 var app = express();
 
 // view engine setup
@@ -54,10 +76,31 @@ app.use('/config2', config2);
 app.use('/save', save);
 app.use('/announcement_200', announcement_200);
 app.use('/announcement_200_000066', announcement_200_000066);
-app.use('/rewardlist_seoul_200', rewardlist_seoul_200);
 app.use('/announcement_210', announcement_210);
 app.use('/announcement_210_000066', announcement_210_000066);
+
+app.use('/rewardlist_seoul_200', rewardlist_seoul_200);
+app.use('/rewardlist_seoul_200_000005', rewardlist_seoul_200_000005);
+app.use('/rewardlist_seoul_200_000020', rewardlist_seoul_200_000020);
+app.use('/rewardlist_seoul_200_000023', rewardlist_seoul_200_000023);
+app.use('/rewardlist_seoul_200_000054', rewardlist_seoul_200_000054);
+app.use('/rewardlist_seoul_200_000108', rewardlist_seoul_200_000108);
+app.use('/rewardlist_seoul_200_000440', rewardlist_seoul_200_000440);
+app.use('/rewardlist_seoul_200_000491', rewardlist_seoul_200_000491);
+app.use('/rewardlist_seoul_200_000582', rewardlist_seoul_200_000582);
+app.use('/rewardlist_seoul_200_000800', rewardlist_seoul_200_000800);
+
+
 app.use('/rewardlist_seoul_210', rewardlist_seoul_210);
+app.use('/rewardlist_seoul_210_000005', rewardlist_seoul_210_000005);
+app.use('/rewardlist_seoul_210_000020', rewardlist_seoul_210_000020);
+app.use('/rewardlist_seoul_210_000023', rewardlist_seoul_210_000023);
+app.use('/rewardlist_seoul_210_000054', rewardlist_seoul_210_000054);
+app.use('/rewardlist_seoul_210_000108', rewardlist_seoul_210_000108);
+app.use('/rewardlist_seoul_210_000440', rewardlist_seoul_210_000440);
+app.use('/rewardlist_seoul_210_000491', rewardlist_seoul_210_000491);
+app.use('/rewardlist_seoul_210_000582', rewardlist_seoul_210_000582);
+app.use('/rewardlist_seoul_210_000800', rewardlist_seoul_210_000800);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
