@@ -6,7 +6,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-    res.render('rewardlist_seoul_210', { title: 'Express' });
+    res.render('rewardlist_seoul_210', { title: 'Express', date_desc: util.getWeekDesc() });
 });
 
 module.exports = router;
