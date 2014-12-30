@@ -7,7 +7,7 @@ var util = require('../module/util');
 
 /* GET home page. */
 router.get('/', function (req, res) {
-    res.render('rewardlist_seoul_220_000442', { title: 'Express', date_desc: util.getWeekDesc() });
+    res.render('rewardlist_seoul_220_000961', { title: 'Express', date_desc: util.getWeekDesc() });
 });
 
 module.exports = router;

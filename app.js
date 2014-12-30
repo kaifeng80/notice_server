@@ -43,7 +43,7 @@ var announcement_210_000582 = require('./routes/announcement_210_000582');
 var announcement_210_000800 = require('./routes/announcement_210_000800');
 
 var announcement_220 = require('./routes/announcement_220');
-var announcement_220_000442 = require('./routes/announcement_220_000442');
+var announcement_220_000961 = require('./routes/announcement_220_000961');
 
 var rewardlist_seoul_200 = require('./routes/rewardlist_seoul_200');
 var rewardlist_seoul_200_000005 = require('./routes/rewardlist_seoul_200_000005');
@@ -68,7 +68,7 @@ var rewardlist_seoul_210_000582 = require('./routes/rewardlist_seoul_210_000582'
 var rewardlist_seoul_210_000800 = require('./routes/rewardlist_seoul_210_000800');
 
 var rewardlist_seoul_220 = require('./routes/rewardlist_seoul_220');
-var rewardlist_seoul_220_000442 = require('./routes/rewardlist_seoul_220_000442');
+var rewardlist_seoul_220_000961 = require('./routes/rewardlist_seoul_220_000961');
 var app = express();
 
 // view engine setup
@@ -122,7 +122,7 @@ app.use('/announcement_210_000582', announcement_210_000582);
 app.use('/announcement_210_000800', announcement_210_000800);
 
 app.use('/announcement_220', announcement_220);
-app.use('/announcement_220_000442', announcement_220_000442);
+app.use('/announcement_220_000961', announcement_220_000961);
 
 app.use('/rewardlist_seoul_200', rewardlist_seoul_200);
 app.use('/rewardlist_seoul_200_000005', rewardlist_seoul_200_000005);
@@ -148,7 +148,7 @@ app.use('/rewardlist_seoul_210_000582', rewardlist_seoul_210_000582);
 app.use('/rewardlist_seoul_210_000800', rewardlist_seoul_210_000800);
 
 app.use('/rewardlist_seoul_220', rewardlist_seoul_220);
-app.use('/rewardlist_seoul_220_000442', rewardlist_seoul_220_000442);
+app.use('/rewardlist_seoul_220_000961', rewardlist_seoul_220_000961);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
