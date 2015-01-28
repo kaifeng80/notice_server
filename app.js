@@ -76,6 +76,7 @@ var rewardlist_seoul_220_000961 = require('./routes/rewardlist_seoul_220_000961'
 var rewardlist_seoul_220_000442 = require('./routes/rewardlist_seoul_220_000442');
 
 var rewardlist_seoul_230 = require('./routes/rewardlist_seoul_230');
+var index_mm = require('./routes/index_mm');
 
 var app = express();
 
@@ -164,6 +165,7 @@ app.use('/rewardlist_seoul_220_000961', rewardlist_seoul_220_000961);
 app.use('/rewardlist_seoul_220_000442', rewardlist_seoul_220_000442);
 
 app.use('/rewardlist_seoul_230', rewardlist_seoul_230);
+app.use('/index_mm', index_mm);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
