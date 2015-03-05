@@ -49,6 +49,7 @@ var announcement_220_000442 = require('./routes/announcement_220_000442');
 
 var announcement_230 = require('./routes/announcement_230');
 var announcement_230_000013 = require('./routes/announcement_230_000013');
+var announcement_230_000023 = require('./routes/announcement_230_000023');
 
 var rewardlist_seoul_200 = require('./routes/rewardlist_seoul_200');
 var rewardlist_seoul_200_000005 = require('./routes/rewardlist_seoul_200_000005');
@@ -138,6 +139,7 @@ app.use('/announcement_220_000442', announcement_220_000442);
 
 app.use('/announcement_230', announcement_230);
 app.use('/announcement_230_000013', announcement_230_000013);
+app.use('/announcement_230_000023', announcement_230_000023);
 
 app.use('/rewardlist_seoul_200', rewardlist_seoul_200);
 app.use('/rewardlist_seoul_200_000005', rewardlist_seoul_200_000005);
